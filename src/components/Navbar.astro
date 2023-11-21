@@ -1,5 +1,5 @@
 ---
-
+import Icon from 'astro-icon';
 ---
 
 <div class='flex items-center justify-between'>
@@ -19,7 +19,7 @@
       <a
         href='/about'
         class={`text-xl transition ease-out hover:text-cyan-500 duration-300 ${
-          Astro.url.pathname === '/about/'
+          Astro.url.pathname === '/about'
             ? 'white border-b-4 border-cyan-500'
             : 'text-gray-400 border-none'
         } `}
@@ -29,7 +29,7 @@
       <a
         href='/blog'
         class={`text-xl transition ease-out hover:text-cyan-500 duration-300 ${
-          Astro.url.pathname === '/blog/'
+          Astro.url.pathname === '/blog'
             ? 'white border-b-4 border-cyan-500'
             : 'text-gray-400 border-none'
         } `}
@@ -42,26 +42,33 @@
     <div class='dropdown dropdown-end'>
       <label
         tabindex={0}
-        class='transition ease-out btn m-1 text-white hover:border-1 hover:border-cyan-500 duration-300'
-        >Menu</label
+        class='transition ease-out btn m-1 bg-transparent shadow-sm shadow-cyan-500/50 text-white hover:shadow-lg hover:shadow-cyan-500/50 duration-300'
+        ><Icon
+          pack='jam'
+          name='menu'
+          class='text-cyan-500 w-[36px] h-[36px] z-50'
+        /></label
       >
       <ul
         tabindex={0}
-        class='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52'
+        class='dropdown-content z-[1] menu p-2 shadow-sm shadow-cyan-500/50 bg-[#18181b] rounded-box w-52'
       >
         <li>
           <a
             href='/'
-            class='text-lg transition ease-out hover:text-cyan-500 duration-300'
-            >Home</a
+            class={`text-lg transition ease-out hover:text-cyan-500 duration-300 ${
+              Astro.url.pathname === '/'
+                ? 'text-white'
+                : 'text-gray-400 border-none'
+            } `}>Home</a
           >
         </li>
         <li>
           <a
             href='/about'
             class={`text-lg transition ease-out hover:text-cyan-500 duration-300 ${
-              Astro.url.pathname === '/about/'
-                ? 'white border-b-4 border-cyan-500'
+              Astro.url.pathname === '/about'
+                ? 'text-white'
                 : 'text-gray-400 border-none'
             } `}>About</a
           >
@@ -70,7 +77,7 @@
           <a
             href='/blog'
             class={`text-lg transition ease-out hover:text-cyan-500 duration-300 ${
-              Astro.url.pathname === '/blog/'
+              Astro.url.pathname === '/blog'
                 ? 'white border-b-4 border-cyan-500'
                 : 'text-gray-400 border-none'
             } `}>Blog</a
