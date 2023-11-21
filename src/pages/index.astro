@@ -1,8 +1,70 @@
 ---
-import Main from '../components/Main.astro';
+import Icon from 'astro-icon';
+import H1 from '../components/H1.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='AnfryBlog'>
-  <Main>Hello World</Main>
+  <div
+    class='flex flex-col items-center justify-center w-full px-24 lg:px-48 max-sm:px-5 max-w-7xl mx-auto'
+  >
+    <H1 text='Welcome to' spanText='AnfryBog' />
+    <p class='text-left mb-4 text-2xl max-sm:text-xl font-light'>
+      I&apos;ll try to cover the most important topics regarding web
+      development. Going from beginner&apos;s topics to more advanced ones.
+      <br />
+       You&apos;ll find useful informations and links to different influencers
+      or official websites. My goal is to guide you through the understanding of
+      the topics, how to find answers and what tool or framework to use.
+      I&apos;ll use concrete exemples, real projects, Github repos, other blogs,
+      streamers to follow...
+    </p>
+    <div class='text-center my-8'>
+      <button
+        class='transition ease-out hover:bg-cyan-500 rounded-md bg-cyan-600 text-white py-2 px-4 mb-4 duration-300'
+      >
+        <a href='/blog'>BLOG</a>
+      </button>
+    </div>
+    <p class='mb-4 font-bold text-sm'>FOLLOW ME ON :</p>
+    <div class='flex align-center justify-center text-4xl'>
+      <a
+        target='_blank'
+        rel='noreferrer'
+        href='https://github.com/Canfry'
+        aria-label='Github'
+      >
+        <Icon
+          pack='ri'
+          name='github-fill'
+          class='transition ease-out w-[36px] h-[36px] text-[#6e5494] hover:scale-110 duration-300'
+        />
+      </a>
+
+      <a
+        target='_blank'
+        rel='noreferrer'
+        href='https://twitter.com/ChristopheAnfry'
+        aria-label='Twitter'
+      >
+        <Icon
+          pack='mdi'
+          name='twitter'
+          class='transition ease-out w-[36px] h-[36px] text-[#1da1f2] ml-8 hover:scale-110 duration-300'
+        />
+      </a>
+      <a
+        target='_blank'
+        rel='noreferrer'
+        href='https://fryblog.hashnode.dev/'
+        aria-label='Hashnode'
+      >
+        <Icon
+          pack='logos'
+          name='hashnode-icon'
+          class='transition ease-out w-[33px] h-[33px] text-[#1da1f2] ml-8 hover:scale-110 duration-300'
+        />
+      </a>
+    </div>
+  </div>
 </Layout>

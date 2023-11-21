@@ -16,5 +16,8 @@
     "astro-icon": "^0.8.1",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "daisyui": "^4.4.2"
   }
 }

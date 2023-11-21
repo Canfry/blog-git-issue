@@ -1,0 +1,12 @@
+---
+interface Props {
+  text?: string;
+  spanText?: string;
+}
+
+const { text, spanText } = Astro.props;
+---
+
+<h1 class='text-3xl max-sm:text-2xl mb-8 font-bold'>
+  {text}<span class='font-bold text-cyan-400'> {spanText}</span>
+</h1>
