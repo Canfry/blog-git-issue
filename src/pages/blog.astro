@@ -1,6 +1,8 @@
 ---
 import Main from '../components/Main.astro';
 import Layout from '../layouts/Layout.astro';
+
+const allPosts = await getCollection('posts');
 ---
 
 <Layout title='Blog'>
