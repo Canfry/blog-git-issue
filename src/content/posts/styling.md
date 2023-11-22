@@ -2,8 +2,6 @@
 title: Styling your projects
 description: Approach for styling in web development
 date: 03/22/2023
-excerpt: CSS, What is CSS?
-If HTML is the squeleton of the body, CSS is the skin...
 image: ./images/styling.jpeg
 tags: ['css', 'sass', 'tailwindcss']
 ---
@@ -23,7 +21,7 @@ First of all, if you are a beginner with CSS and want to learn it, here are some
 
 What I like about CSS and I also strongly recommend to you, is the possibility to name your classes and/or your ids with a very clear and descriptive name. You can’t be lost if you clearly describe what the class or the id is for:
 
-![Screenshot 2023-03-19 at 06.21.53.png](../../../assets/classes.png)
+![Screenshot 2023-03-19 at 06.21.53.png](./images/classes.png)
 
 Here we have a very clear description of what these elements are for. It becomes easier when you are in your CSS files to style them.
 
@@ -162,7 +160,7 @@ SASS is CSS version 2.0 or as it’s said on their [website](https://sass-lang.c
 
 I like to use Sass when I have designed a project first. It helps you prepare your Css in advance and keep it well-organized before even jumping to the code. It’s a bit of boilerplate work but when you have it set up your styling will go much faster. It will also give you an easy way to share design within and across projects.
 
-![Screenshot 2023-03-19 at 08.23.31.png](../../../assets/folder-structure.png)
+![Screenshot 2023-03-19 at 08.23.31.png](./images/folder-structure.png)
 
 This is an exemple of what the Sass folder structure looks like. You can be scared seing that but, let’s explain it. First you create a style.scss file, and when it’s compile (following the different options to compile) your output (in this case the output i’ve choosen from the VsCode extension) will be in a folder called css and the file will be style.css with a map file. The map file is very useful and I really recommend it as it tells you in which scss file you have an error. The style.css is the one you link in your html file (not the scss one).
 
@@ -246,7 +244,7 @@ p {
 
 Another very important part, is to define a function that will convert pixels into rem or em units. But why? A lot of people are concerned with some visual disease and in order to see correctly on screens they bump the default font size up or down (not zoom).
 
-![Screenshot 2023-03-19 at 08.34.09.png](../../../assets/settings.png)
+![Screenshot 2023-03-19 at 08.34.09.png](./images/settings.png)
 
 They literally change it from the browser setting. If your units are with pixels they won’t be affected by this change (for example if your font-size is 16px, it will remain at a fixed 16px even the default browser font-size has changed). That’s why (it’s my opinion) you must define your sizes with rem or em units (also in CSS or any other frameworks) for these people to have a correct scale of all the elements when they bump it up or down. In Sass you have built-in modules to make things easier and create useful funcitons:
 

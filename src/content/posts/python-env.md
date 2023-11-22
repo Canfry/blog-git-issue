@@ -2,7 +2,6 @@
 title: What is Python Environment?
 description: Understand and manage Python environment
 date: 10/29/2023
-excerpt: What is python environment and how to use it...
 image: ./images/python.jpg
 tags: ['web development', 'python', 'virtual-environment']
 ---
@@ -62,10 +61,10 @@ When the virtual environment is activated, your command prompt will change to in
 ```
 
 For me instead of my normal prompt without virtual environment:
-![Screenshot](../../../assets/no-venv.png)
+![Screenshot](./images/no-venv.png)
 
 I'll have:
-![Screenshot](../../../assets/venv.png)
+![Screenshot](./images/venv.png)
 
 Now, any Python packages you install or commands you run will be isolated to this virtual environment.
 Inside the activated virtual environment, you can use pip, the Python package manager, to install packages. For example:
@@ -85,7 +84,7 @@ deactivate
 3. Requirements.txt file
    A good practice to have is to create a file called requirements.txt in your root directory, where you put all your packages with their respective version. So when someone clone your code, for example, it will install the correct version for the code to work properly on other virtual environments.
    In this file just write:
-   ![Screenshot](../../../assets/requirements.png)
+   ![Screenshot](./images/requirements.png)
    Once your file created you can run the following command to install those packages:
    ```
    pip install -r requirements.txt

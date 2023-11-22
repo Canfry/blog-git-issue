@@ -6,6 +6,9 @@ export default {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(#27272a 0%, #18181b 60%)',
       },
+      aspectRatio: {
+        thumbnail: '1.5',
+      },
     },
   },
   plugins: [require('daisyui')],

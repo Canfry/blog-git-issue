@@ -2,8 +2,6 @@
 title: Presentation
 description: My Blog
 date: 01/29/2023
-excerpt: Hello everybody, welcome to my blog.
-This is my first real full project in order to...
 image: ./images/presentation.jpeg
 tags: ['astro', 'tailwindcss', 'terminal']
 ---

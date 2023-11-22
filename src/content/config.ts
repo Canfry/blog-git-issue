@@ -11,7 +11,6 @@ const postsCollection = defineCollection({
       date: z
         .string()
         .transform((str) => format(new Date(str), 'MMMM, d, yyyy')),
-      excerpt: z.string(),
       image: image(),
       tags: z.array(z.string()),
     });

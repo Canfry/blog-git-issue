@@ -2,7 +2,6 @@
 title: Customizing your terminal on mac
 description: Few tools to use to customize your terminal quickly and easely
 date: 08/28/2023
-excerpt: For so many times, I was using my default terminal without changing anything, not even the default theme and background...
 image: ./images/terminal.jpg
 tags: ['web development', 'terminal', 'custom']
 ---
@@ -37,4 +36,4 @@ This command will open a color palette with all the needed color codes to replac
 
 I know it's a short article but it's a simple and useful one. Spending a little bit of time with it and you will get a fantastic terminal like the screenshot below with autocomplete (all that you need). Happy coding!!
 
-[Screenshot](../../../assets/terminal.png)
+![Screenshot](./images/terminal.png)

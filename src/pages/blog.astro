@@ -1,10 +1,13 @@
 ---
+import { getCollection } from 'astro:content';
 import Main from '../components/Main.astro';
 import Layout from '../layouts/Layout.astro';
+import PostsList from '../components/PostsList.astro';
 
 const allPosts = await getCollection('posts');
+// console.log(allPosts);
 ---
 
 <Layout title='Blog'>
-  <Main>Blog</Main>
+  <Main><PostsList posts={allPosts} /></Main>
 </Layout>
