@@ -7,9 +7,9 @@ export default {
         'gradient-radial': 'radial-gradient(#27272a 0%, #18181b 60%)',
       },
       aspectRatio: {
-        thumbnail: '1.5',
+        thumbnail: '2',
       },
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui'), require('@tailwindcss/typography')],
 };

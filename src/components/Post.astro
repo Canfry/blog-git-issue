@@ -13,7 +13,7 @@ const { post } = Astro.props;
 <article
   class='rounded-2xl shadow-md shadow-cyan-500 hover:shadow-xl hover:shadow-cyan-500 hover:scale-105 transition-all ease-out duration-500 py-1'
 >
-  <a href={`/post/${post.slug}`}>
+  <a href={`/blog/${post.slug}`}>
     <Image
       src={post.data.image}
       alt={post.data.title}

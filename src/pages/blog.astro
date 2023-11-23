@@ -12,7 +12,7 @@ const categories = Array.from(new Set(allCategories));
 const sortedPosts = allPosts.sort((a, b) => {
   return Number(new Date(b.data.date)) - Number(new Date(a.data.date));
 });
-console.log(sortedPosts);
+// console.log(sortedPosts);
 ---
 
 <Layout title='Blog'>
