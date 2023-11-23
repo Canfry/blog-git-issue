@@ -1,6 +1,7 @@
 ---
 title: The hard part of learning programming
 description: Review all the difficulties of programming
+excerpt: To learn to code and to enter into this programming world is something very exciting...
 date: 07/21/2023
 image: ./images/challenge.jpg
 tags: ['web development', 'learning', 'beginner']

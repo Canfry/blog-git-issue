@@ -3,11 +3,22 @@ import { getCollection } from 'astro:content';
 import Main from '../components/Main.astro';
 import Layout from '../layouts/Layout.astro';
 import PostsList from '../components/PostsList.astro';
+import CategoryList from '../components/CategoryList.astro';
 
 const allPosts = await getCollection('posts');
-// console.log(allPosts);
+const allCategories = allPosts.flatMap((post) => post.data.tags);
+const categories = Array.from(new Set(allCategories));
+
+const sortedPosts = allPosts.sort((a, b) => {
+  return Number(new Date(b.data.date)) - Number(new Date(a.data.date));
+});
+console.log(sortedPosts);
 ---
 
 <Layout title='Blog'>
-  <Main><PostsList posts={allPosts} /></Main>
+  <Main>
+    <CategoryList categories={categories} title='Tags' />
+    <hr class='mb-16 h-[1px] bg-cyan-500/50 border-none' />
+    <PostsList posts={sortedPosts} />
+  </Main>
 </Layout>

@@ -1,6 +1,7 @@
 ---
 title: Styling your projects
 description: Approach for styling in web development
+excerpt: CSS, What is CSS? If HTML is the skeleton of the human body, CSS is the skin...
 date: 03/22/2023
 image: ./images/styling.jpeg
 tags: ['css', 'sass', 'tailwindcss']

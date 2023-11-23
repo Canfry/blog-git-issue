@@ -1,0 +1,29 @@
+---
+import { getImage } from 'astro:assets';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+export const getStaticPaths = async () => {
+  const posts = await getCollection('posts');
+
+  const paths = posts.map((post) => {
+    return {
+      params: {
+        slug: post.slug,
+      },
+      props: {
+        post,
+      },
+    };
+  });
+
+  return paths;
+};
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await post.render();
+const coverImageSource = (await getImage({ src: post.data.image })).src;
+---

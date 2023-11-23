@@ -1,12 +1,18 @@
 ---
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
 }
 
-const { title, description } = Astro.props;
+const {
+  title = 'AnfryBlog',
+  description = 'My personal blog',
+  image = '../content/posts/images/anfrydev.png',
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -15,7 +21,7 @@ const { title, description } = Astro.props;
     <meta charset='UTF-8' />
     <meta name='description' content='Astro description' />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <link rel='icon' href={image} />
     <meta name='generator' content={Astro.generator} />
 
     <!-- Open Grpah Meta -->
@@ -23,7 +29,7 @@ const { title, description } = Astro.props;
     <meta property='og:url' content={Astro.url} />
     <meta property='og:title' content={title} />
     <meta property='og:description' content={description} />
-    <!-- <meta property='og:image' content={image} /> -->
+    <meta property='og:image' content={image} />
     <meta property='og:image:alt' content={description} />
 
     <!-- Twitter Meta -->
@@ -31,7 +37,7 @@ const { title, description } = Astro.props;
     <meta property='twitter:url' content={Astro.url} />
     <meta property='twitter:title' content={title} />
     <meta property='twitter:description' content={description} />
-    <!-- <meta property='twitter:image' content={image} /> -->
+    <meta property='twitter:image' content={image} />
     <meta property='twitter:image:alt' content={description} />
     <title>{title}</title>
   </head>

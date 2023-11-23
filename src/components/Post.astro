@@ -7,16 +7,27 @@ interface Props {
 }
 
 const { post } = Astro.props;
+// console.log(post.body);
 ---
 
-<article>
+<article
+  class='rounded-2xl shadow-md shadow-cyan-500 hover:shadow-xl hover:shadow-cyan-500 hover:scale-105 transition-all ease-out duration-500 py-1'
+>
   <a href={`/post/${post.slug}`}>
     <Image
       src={post.data.image}
       alt={post.data.title}
-      width={600}
-      height={600 / 2}
-      class='rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover'
+      width={1024}
+      height={1024 / 2}
+      class='rounded-t-2xl shadow-xl mb-6 aspect-thumbnail object-cover'
     />
   </a>
+  <a
+    href={`/blog/${post.slug}`}
+    class='text-3xl text-cyan-500 mb-4 font-thin inline-block px-4'
+    >{post.data.title}</a
+  >
+  <p class='text-zinc-300 text-lg mb-9 line-clamp-3 px-4'>
+    {post.data.excerpt}
+  </p>
 </article>

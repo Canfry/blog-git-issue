@@ -1,6 +1,7 @@
 ---
 title: What is Python Environment?
 description: Understand and manage Python environment
+excerpt: 3 years ago I started learning Python, and what made me stop learning it...
 date: 10/29/2023
 image: ./images/python.jpg
 tags: ['web development', 'python', 'virtual-environment']

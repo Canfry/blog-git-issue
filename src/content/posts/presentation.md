@@ -1,6 +1,7 @@
 ---
 title: Presentation
 description: My Blog
+excerpt: This is my first real full project in order to become a front-end developer...
 date: 01/29/2023
 image: ./images/presentation.jpeg
 tags: ['astro', 'tailwindcss', 'terminal']

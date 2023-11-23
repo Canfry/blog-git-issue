@@ -1,6 +1,7 @@
 ---
 title: Customizing your terminal on mac
 description: Few tools to use to customize your terminal quickly and easely
+excerpt: For so many times, I was using my default terminal without changing anything...
 date: 08/28/2023
 image: ./images/terminal.jpg
 tags: ['web development', 'terminal', 'custom']
