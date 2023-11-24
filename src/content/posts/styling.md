@@ -200,6 +200,7 @@ So here I can import everything that I want with @use and can call it as I want 
   gap: u.rem(40);
   width: min(100%, u.rem(1000));
   margin-inline: auto;
+}
 ```
 
 - “util”: used to put functions, colors, font styles, breakpoints…:
