@@ -27,7 +27,10 @@ const { post } = Astro.props;
     class='text-3xl text-cyan-500 mb-4 font-thin inline-block px-4'
     >{post.data.title}</a
   >
-  <p class='text-zinc-300 text-lg mb-9 line-clamp-3 px-4'>
+  <p class='text-zinc-300 text-lg mb-4 line-clamp-3 px-4'>
     {post.data.excerpt}
+  </p>
+  <p class='text-zinc-400 text-md font-thin px-4 mb-9 italic'>
+    {post.data.date}
   </p>
 </article>

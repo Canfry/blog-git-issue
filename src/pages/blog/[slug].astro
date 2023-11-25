@@ -42,6 +42,9 @@ const coverImageSource = (await getImage({ src: post.data.image })).src;
       >&larr; Back to all blogs</a
     >
     <H1 text={post.data.title} />
+    <p class='text-zinc-400 text-md font-thin italic mb-9'>
+      Published on {post.data.date}
+    </p>
 
     <Image
       src={post.data.image}
