@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 
@@ -40,6 +41,7 @@ const {
     <meta property='twitter:image' content={image} />
     <meta property='twitter:image:alt' content={description} />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body
     class='min-h-screen grid grid-rows-[auto,1fr,auto] bg-gradient-radial text-white relative'
@@ -47,12 +49,10 @@ const {
     <Header />
     <slot />
     <Footer />
-  </body>
+  </body><style is:global>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap');
+    body {
+      font-family: 'Comfortaa', cursive;
+    }
+  </style>
 </html>
-
-<style is:global>
-  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap');
-  body {
-    font-family: 'Comfortaa', cursive;
-  }
-</style>
