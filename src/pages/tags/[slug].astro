@@ -1,38 +1,45 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 import CategoryList from '../../components/CategoryList.astro';
 import Main from '../../components/Main.astro';
 import PostsList from '../../components/PostsList.astro';
 import Layout from '../../layouts/Layout.astro';
 
-export const getStaticPaths = async () => {
-  const allPosts = await getCollection('posts');
-  const allCategories = allPosts.flatMap((post) => post.data.tags);
-  const categories = Array.from(new Set(allCategories));
+// export const getStaticPaths = async () => {
+//   const allPosts = await getCollection('posts');
+//   const allCategories = allPosts.flatMap((post) => post.data.tags);
+//   const categories = Array.from(new Set(allCategories));
 
-  const paths = categories.map((category) => {
-    const categoryPosts = allPosts.filter((post) =>
-      post.data.tags.includes(category)
-    );
-    return {
-      params: {
-        slug: category,
-      },
-      props: {
-        category,
-        posts: categoryPosts,
-      },
-    };
-  });
-  return paths;
-};
+//   const paths = categories.map((category) => {
+//     const categoryPosts = allPosts.filter((post) =>
+//       post.data.tags.includes(category)
+//     );
+//     return {
+//       params: {
+//         slug: category,
+//       },
+//       props: {
+//         category,
+//         posts: categoryPosts,
+//       },
+//     };
+//   });
+//   return paths;
+// };
 
-interface Props {
-  category: string;
-  posts: CollectionEntry<'posts'>[];
-}
+// interface Props {
+//   category: string;
+//   posts: CollectionEntry<'posts'>[];
+// }
 
-const { category, posts } = Astro.props;
+// const { category, posts } = Astro.props;
+
+const category = Astro.params.slug as string;
+const allPosts = await getCollection('posts');
+const posts = allPosts.filter((post) => post.data.tags.includes(category));
+const sortedPosts = posts.sort((a, b) => {
+  return Number(new Date(b.data.date)) - Number(new Date(a.data.date));
+});
 ---
 
 <Layout title='Blog'>
@@ -42,6 +49,6 @@ const { category, posts } = Astro.props;
     >
     <CategoryList categories={[category]} title='Posts tagged' />
     <hr class='mb-16 h-[1px] w-full bg-cyan-500/50 border-none' />
-    <PostsList posts={posts} />
+    <PostsList posts={sortedPosts} />
   </Main>
 </Layout>
