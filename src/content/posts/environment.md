@@ -37,7 +37,7 @@ One of the most important part in our domain is the browser. Google Chrome has b
 
 Pressing CMD + F lets you ask anything to the AI, as for example "Give me a resume og this page". You have workspace with different pinned tabs (bookmarks) or windows. I have my pinned tabs for personal things like social media, emails... and a work one where i put documentations, hosting providers, my projects... The final feature I want to mention is that every webpages is customizable. So you can change the colors and the fonts. Here is my X config:
 
-![Screenshot](./images/arc.png)
+![Screenshot](./images/x.png)
 
 
 ### App manager
