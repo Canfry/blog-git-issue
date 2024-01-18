@@ -33,11 +33,11 @@ Now let's jump into the heart of the matter. There are so many different softwar
 One of the most important part in our domain is the browser. Google Chrome has been my browser for so many time, that I've never thought I will find a better product. I was wrong!!! 
 [Arc Browser](https://arc.net/) is just what I needed and is definitively the next generation browser. First of all it keeps all your Chrome bookmarks and extensions. It might be obvious, but I appreciated to not have to set up everything again. I'm not gonna go over all the features, but they always come with updates that astonished me. For example, they have AI integrated, so when you hover over a link you have a little description on what the link is about:
 
-![Screenshot](.images/arc.png)
+![Screenshot](./images/arc.png)
 
 Pressing CMD + F lets you ask anything to the AI, as for example "Give me a resume og this page". You have workspace with different pinned tabs (bookmarks) or windows. I have my pinned tabs for personal things like social media, emails... and a work one where i put documentations, hosting providers, my projects... The final feature I want to mention is that every webpages is customizable. So you can change the colors and the fonts. Here is my X config:
 
-![Screenshot](.images/arc.png)
+![Screenshot](./images/arc.png)
 
 
 ### App manager
@@ -49,7 +49,7 @@ One of the best product on the market today, in my opinion, is [Raycast](https:/
 
 I'm a VsCode lover but wanted to try something different after facing a lot of issues with git, thinking that was coming from VsCode. So I've tried [Neovim](https://neovim.io/doc/) I admit that it can take a long time to make it up and running as you want and to be familiar with the shortcuts, but the experience is so exciting. If you want to start without any knowledge I highly recommend to use the [Kickstart](https://github.com/nvim-lua/kickstart.nvim) which allows you to have very useful config to start with. From there you can learn how it works and add new things or modify existing ones. It's written in [Lua](https://www.lua.org/) which is not a difficult language for the configuration, quiet easy to understand the syntax. Anyway the community and the documentation around Vim are huge, so you'll always find resources and help when needed. A nice feature as example is the possibility to jump directly to any specific line. In the screenshot below where my cursor is I have the line number and on top and above the line distance count, so I can press '17' and J (moving down) and I jump directly to the line where my </p> tag ends.
 
-![Sreenshot](.images/vim.png)
+![Sreenshot](./images/vim.png)
 
 One weird thing that I've notice using it, is that you have to quit the IDE to go back to your terminal. So on top of that I'm using [Tmux](https://github.com/tmux/tmux/wiki/Getting-Started) which is a terminal multiplexer. You manage your sessions which can contain several windows. So with easy shortcuts (that you can modify, to be for example only one key), you can switch so quickly between your code editor and your terminal or between different sessions or windows. For example you can have a session for backend and one for frontend.
 Finally on top of that you can use [FZF](https://github.com/junegunn/fzf) which is a fuzzy finder. It means that from your terminal you type fzf + enter and a pop window appears where you can search for files, command history, processes, hostnames, bookmarks, git commits, etc...  with a preview on the right side.
