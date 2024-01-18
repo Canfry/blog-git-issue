@@ -9,7 +9,7 @@ tags: ['web development', 'terminal', 'custom', 'tools', 'environment']
 
 ## INTRO
 
-Being a developer is existing in so much domains. You're always learning new things and it's like a never ended process. Always new languages, frameworks, tools... 
+Being a developer is exciting in so much domains. You're always learning new things and it's like a never ended process. Always new languages, frameworks, tools... 
 In this article I want to share an important point for me, that I'm starting to focus on, more and more. This is my developer environment. What I mean by that? The tools, shortcuts, IDE, that I use and that make my developer experience much more efficient and also more exciting.
 
 
