@@ -1,5 +1,5 @@
 ---
-title: Easy CSV. 
+title: From an abandoned project to winning the Xata hackathon. 
 description: From an abandoned project to winning the Xata hackathon.
 excerpt: It all starts in august 2023. I wanted to build a project to add to my portfolio.
 date: 02/23/2024
