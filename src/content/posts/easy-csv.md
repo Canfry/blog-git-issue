@@ -30,7 +30,7 @@ In order to simulate the database, I decided to use local storage, in order for 
 ## The hard work
 I was scared for different reasons:
 - It was my first ever hackathon
-- It was from mid-december to mid-january, which means for me that my 3 kids are gonna at home during Christmas holidays, for almost 3 weeks, with my wife working.
+- It was from mid-december to mid-january, which means for me that my 3 kids are gonna be at home during Christmas holidays, for almost 3 weeks, with my wife working.
 - My family was also coming for a week during those holidays.
 
 On the other hand, It was an amazing opportunity to build a full stack project, with limited time, and reviewed by amazing people. I had no other choice to wake up early (around 4am) in order to have few focused hours without any distractions. It has been very tough and I knew it's gonna be almost impossible to have the project as I wanted. I was just short on time I can dedicate to it. But the purpose was to submit a finished project that works properly, even if I wasn't able to add all the desired features. It was also important to do it without unecessary pressure or stress. Finally I was able to submit the project and was waiting for the results.
