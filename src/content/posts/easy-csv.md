@@ -49,5 +49,5 @@ Special thanks to James Q Quick, all the members of the Learn Build Teach commun
 
 As I like to say, "Always code with love and passion"
 
-You can find the app [here](https://easy-csv.netlifly.app)
+You can find the app [here](https://easy-csv.netlify.app)
 And the repo [here](https://github.com/Canfry/easy-csv)
