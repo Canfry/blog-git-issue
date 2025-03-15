@@ -9,14 +9,14 @@ tags: ["nextjs", "typescript", "xata"]
 
 ## Intro
 
-It's been a while since I wrote an article and since I coded with Javascript. I was quiet busy with my new job at Amazon and being a father of three.
-Maybe I'll explained more in details in another article why I moved away from Javascript. But to make it short I was playing with other programming languages like Python, Go and Rust. I've learnt so much from these languages, but at the end my love for the Javascript ecosystem is too strong.
+It's been a while since I wrote an article and since I coded with Javascript. I was quite busy with my new job at Amazon and being a father of three.
+Maybe I'll explain more in details in another article why I moved away from Javascript. But to make it short I was playing with other programming languages like Python, Go and Rust. I've learnt so much from these languages, but at the end my love for the Javascript ecosystem is too strong.
 So I decided to get up to date with the new version of Nextjs with the server component and server actions (and many other new features). As Go and Rust are strict-typed languages is has been easy to come back with Typescript.
 So the main objective that I had was to understand how things work between server and client in the same project. I already dealt with it with Astro but it was using API endpoints. Here I wanted to avoid creating api routes.
 
 ## The stack choice
 
-Here came the moment of choosing the stack to be able to practice the new aspect of Nextjs and learn from it. First of all I wanted a full-stack app, with authentication. The data didn't matter as there will be dummy anyway. I also wanted to not loose time in setting up complicated featrues as the goal was get familiar with Nextjs.
+Here came the moment of choosing the stack to be able to practice the new aspect of Nextjs and learn from it. First of all I wanted a full-stack app, with authentication. The data didn't matter as there will be dummy anyway. I also wanted to not lose time in setting up complicated features as the goal was get familiar with Nextjs.
 So I made these choices:
 
 - [Clerk](https://clerk.com/) for authentication as it's quiet straight forward and fast to set up.
@@ -60,7 +60,7 @@ But I was like kind of surprise why we would have some Xata type and we can not 
 
 And the result in the client was:
 
-![Screeshot](./images/good-client-type.png)
+![Screenshot](./images/good-client-type.png)
 
 ## Conclusion
 
@@ -68,7 +68,7 @@ I don't know yet if I get it well and maybe I miss something, but in this situat
 
 I'm so happy to have been back into the Javascript ecosystem with these amazing tools like Xata and Nextjs that make things easier and scalable. There is still a lot of things to learn and implement (Suspense fallback with loading files, errors with error files, caching...), but I'm enjoying coding like that.
 
-Please check out the Xata features (Serverless Postgress, Zero-downtime schema migrations, Branch system...), everything is made to make your developer experience even better. Thank to this amazing Team and its community.
+Please check out the Xata features (Serverless Postgress, Zero-downtime schema migrations, Branch system...), everything is made to make your developer experience even better. Thanks to this amazing team and its community.
 
 You can find the demo [here](https://nextuserposts.netlify.app/)
 and the code [here](https://github.com/Canfry/next-userposts)
